@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-vector-float64
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import Float64Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-float64@deno/mod.js';
+var Float64Vector = require( '@stdlib/ndarray-vector-float64' );
 ```
 
 #### Float64Vector( \[options] )
@@ -60,7 +78,7 @@ import Float64Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-
 Returns a one-dimensional double-precision floating-point [ndarray][@stdlib/ndarray/ctor].
 
 ```javascript
-import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-numel@deno/mod.js';
+var numel = require( '@stdlib/ndarray-numel' );
 
 var arr = new Float64Vector();
 // returns <ndarray>
@@ -80,7 +98,7 @@ The function accepts the following options:
 Returns a one-dimensional double-precision floating-point [ndarray][@stdlib/ndarray/ctor] having a specified `length`.
 
 ```javascript
-import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-numel@deno/mod.js';
+var numel = require( '@stdlib/ndarray-numel' );
 
 var arr = new Float64Vector( 5 );
 // returns <ndarray>
@@ -94,7 +112,7 @@ var len1 = numel( arr );
 Creates a one-dimensional double-precision floating-point [ndarray][@stdlib/ndarray/ctor] from an array-like object or iterable.
 
 ```javascript
-import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-numel@deno/mod.js';
+var numel = require( '@stdlib/ndarray-numel' );
 
 var arr = new Float64Vector( [ 1.0, 2.0, 3.0 ] );
 // returns <ndarray>
@@ -108,8 +126,8 @@ var len1 = numel( arr );
 Returns a one-dimensional double-precision floating-point [ndarray][@stdlib/ndarray/ctor] view of an [`ArrayBuffer`][@stdlib/array/buffer].
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@deno/mod.js';
-import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-numel@deno/mod.js';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
+var numel = require( '@stdlib/ndarray-numel' );
 
 var buf = new ArrayBuffer( 64 );
 
@@ -153,10 +171,10 @@ var len3 = numel( arr3 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
-import sum from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-sum@deno/mod.js';
-import map from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-map@deno/mod.js';
-import Float64Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-float64@deno/mod.js';
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var sum = require( '@stdlib/blas-ext-sum' );
+var map = require( '@stdlib/ndarray-map' );
+var Float64Vector = require( '@stdlib/ndarray-vector-float64' );
 
 // Create a vector containing random values:
 var x = new Float64Vector( discreteUniform( 10, 0, 100 ) );
@@ -207,7 +225,7 @@ console.log( v.get() );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -224,7 +242,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -237,8 +255,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/ndarray-vector-float64.svg
 [npm-url]: https://npmjs.org/package/@stdlib/ndarray-vector-float64
 
-[test-image]: https://github.com/stdlib-js/ndarray-vector-float64/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/ndarray-vector-float64/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/ndarray-vector-float64/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/ndarray-vector-float64/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/ndarray-vector-float64/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/ndarray-vector-float64?branch=main
@@ -250,8 +268,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -270,9 +288,9 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-vector-float64/main/LICENSE
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer/tree/deno
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
 </section>
 
