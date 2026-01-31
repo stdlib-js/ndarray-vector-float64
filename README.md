@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import Float64Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-float64@esm/index.mjs';
+import Float64Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-float64@v0.1.0-esm/index.mjs';
 ```
 
 #### Float64Vector( \[options] )
@@ -161,7 +161,7 @@ var len3 = numel( arr3 );
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
 import sum from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-sum@esm/index.mjs';
 import map from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-map@esm/index.mjs';
-import Float64Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-float64@esm/index.mjs';
+import Float64Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-float64@v0.1.0-esm/index.mjs';
 
 // Create a vector containing random values:
 var x = new Float64Vector( discreteUniform( 10, 0, 100 ) );
