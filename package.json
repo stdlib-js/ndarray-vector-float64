@@ -38,7 +38,8 @@
   },
   "dependencies": {
     "@stdlib/ndarray-vector-ctor": "^0.1.1",
-    "@stdlib/types": "^0.4.3"
+    "@stdlib/types": "^0.4.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/array-buffer": "^0.2.3",
