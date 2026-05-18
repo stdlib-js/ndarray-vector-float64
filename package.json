@@ -53,6 +53,8 @@
     "@stdlib/ndarray-base-assert-is-read-only": "^0.2.3",
     "@stdlib/ndarray-data-buffer": "^0.2.3",
     "@stdlib/ndarray-map": "^0.1.1",
+    "@stdlib/ndarray-numel": "^0.2.3",
+    "@stdlib/ndarray-order": "^0.2.3",
     "@stdlib/random-array-discrete-uniform": "^0.2.2",
     "@stdlib/string-format": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
