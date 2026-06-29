@@ -228,6 +228,7 @@ console.log( v.get() );
 -   <span class="package-name">[`@stdlib/ndarray-vector/complex64`][@stdlib/ndarray/vector/complex64]</span><span class="delimiter">: </span><span class="description">create a single-precision complex floating-point vector (i.e., a one-dimensional ndarray).</span>
 -   <span class="package-name">[`@stdlib/ndarray-vector/bool`][@stdlib/ndarray/vector/bool]</span><span class="delimiter">: </span><span class="description">create a boolean vector (i.e., a one-dimensional ndarray).</span>
 -   <span class="package-name">[`@stdlib/ndarray-vector/ctor`][@stdlib/ndarray/vector/ctor]</span><span class="delimiter">: </span><span class="description">create a vector (i.e., a one-dimensional ndarray).</span>
+-   <span class="package-name">[`@stdlib/ndarray-matrix/float64`][@stdlib/ndarray/matrix/float64]</span><span class="delimiter">: </span><span class="description">create a double-precision floating-point matrix (i.e., a two-dimensional ndarray).</span>
 -   <span class="package-name">[`@stdlib/ndarray-ctor`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
 
 </section>
@@ -335,6 +336,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/vector/bool]: https://github.com/stdlib-js/ndarray-vector-bool
 
 [@stdlib/ndarray/vector/ctor]: https://github.com/stdlib-js/ndarray-vector-ctor
+
+[@stdlib/ndarray/matrix/float64]: https://github.com/stdlib-js/ndarray-matrix-float64
 
 <!-- </related-links> -->
 
